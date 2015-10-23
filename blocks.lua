@@ -80,7 +80,7 @@ minetest.register_on_punchnode(on_bobblock_punched)
 
 minetest.register_node("bobblocks:btm", {
 	description = "Bobs TransMorgifier v5",
-    tile_images = {"bobblocks_btm_sides.png", "bobblocks_btm_sides.png", "bobblocks_btm_sides.png",
+    tiles = {"bobblocks_btm_sides.png", "bobblocks_btm_sides.png", "bobblocks_btm_sides.png",
 		"bobblocks_btm_sides.png", "bobblocks_btm_sides.png", "bobblocks_btm.png"},
     inventory_image = "bobblocks_btm.png",
 	paramtype2 = "facedir",
@@ -95,7 +95,7 @@ minetest.register_node("bobblocks:btm", {
 minetest.register_node("bobblocks:redblock", {
 	description = "Red Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_redblock.png"},
+	tiles = {"bobblocks_redblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_redblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -111,7 +111,7 @@ minetest.register_node("bobblocks:redblock", {
 
 minetest.register_node("bobblocks:redblock_off", {
 	description = "Red Block",
-    tile_images = {"bobblocks_redblock.png"},
+    tiles = {"bobblocks_redblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -126,7 +126,7 @@ minetest.register_node("bobblocks:redblock_off", {
 minetest.register_node("bobblocks:orangeblock", {
 	description = "Orange Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_orangeblock.png"},
+	tiles = {"bobblocks_orangeblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_orangeblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -142,7 +142,7 @@ minetest.register_node("bobblocks:orangeblock", {
 
 minetest.register_node("bobblocks:orangeblock_off", {
 	description = "Orange Block",
-    tile_images = {"bobblocks_orangeblock.png"},
+    tiles = {"bobblocks_orangeblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -157,7 +157,7 @@ minetest.register_node("bobblocks:orangeblock_off", {
 minetest.register_node("bobblocks:yellowblock", {
 	description = "Yellow Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_yellowblock.png"},
+	tiles = {"bobblocks_yellowblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_yellowblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -173,7 +173,7 @@ minetest.register_node("bobblocks:yellowblock", {
 
 minetest.register_node("bobblocks:yellowblock_off", {
 	description = "Yellow Block",
-    tile_images = {"bobblocks_yellowblock.png"},
+    tiles = {"bobblocks_yellowblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -188,7 +188,7 @@ minetest.register_node("bobblocks:yellowblock_off", {
 minetest.register_node("bobblocks:greenblock", {
 	description = "Green Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_greenblock.png"},
+	tiles = {"bobblocks_greenblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_greenblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -204,7 +204,7 @@ minetest.register_node("bobblocks:greenblock", {
 
 minetest.register_node("bobblocks:greenblock_off", {
 	description = "Green Block",
-    tile_images = {"bobblocks_greenblock.png"},
+    tiles = {"bobblocks_greenblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -220,7 +220,7 @@ minetest.register_node("bobblocks:greenblock_off", {
 minetest.register_node("bobblocks:blueblock", {
 	description = "Blue Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_blueblock.png"},
+	tiles = {"bobblocks_blueblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_blueblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -236,7 +236,7 @@ minetest.register_node("bobblocks:blueblock", {
 
 minetest.register_node("bobblocks:blueblock_off", {
 	description = "Blue Block",
-    tile_images = {"bobblocks_blueblock.png"},
+    tiles = {"bobblocks_blueblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -251,7 +251,7 @@ minetest.register_node("bobblocks:blueblock_off", {
 minetest.register_node("bobblocks:indigoblock", {
 	description = "Indigo Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_indigoblock.png"},
+	tiles = {"bobblocks_indigoblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_indigoblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -267,7 +267,7 @@ minetest.register_node("bobblocks:indigoblock", {
 
 minetest.register_node("bobblocks:indigoblock_off", {
 	description = "Indigo Block",
-    tile_images = {"bobblocks_indigoblock.png"},
+    tiles = {"bobblocks_indigoblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -283,7 +283,7 @@ minetest.register_node("bobblocks:indigoblock_off", {
 minetest.register_node("bobblocks:violetblock", {
 	description = "Violet Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_violetblock.png"},
+	tiles = {"bobblocks_violetblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_violetblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -299,7 +299,7 @@ minetest.register_node("bobblocks:violetblock", {
 
 minetest.register_node("bobblocks:violetblock_off", {
 	description = "Violet Block",
-    tile_images = {"bobblocks_violetblock.png"},
+    tiles = {"bobblocks_violetblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -314,7 +314,7 @@ minetest.register_node("bobblocks:violetblock_off", {
 minetest.register_node("bobblocks:whiteblock", {
 	description = "White Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_whiteblock.png"},
+	tiles = {"bobblocks_whiteblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_whiteblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -330,7 +330,7 @@ minetest.register_node("bobblocks:whiteblock", {
 
 minetest.register_node("bobblocks:whiteblock_off", {
 	description = "White Block",
-    tile_images = {"bobblocks_whiteblock.png"},
+    tiles = {"bobblocks_whiteblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -346,7 +346,7 @@ minetest.register_node("bobblocks:whiteblock_off", {
 minetest.register_node("bobblocks:greyblock", {
 	description = "Grey Block",
 	drawtype = "glasslike",
-	tile_images = {"bobblocks_greyblock.png"},
+	tiles = {"bobblocks_greyblock.png"},
 	inventory_image = minetest.inventorycube("bobblocks_greyblock.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -362,7 +362,7 @@ minetest.register_node("bobblocks:greyblock", {
 
 minetest.register_node("bobblocks:greyblock_off", {
 	description = "Grey Block",
-    tile_images = {"bobblocks_greyblock.png"},
+    tiles = {"bobblocks_greyblock.png"},
     is_ground_content = true,
     alpha = WATER_ALPHA,
     groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1},
@@ -379,7 +379,7 @@ minetest.register_node("bobblocks:greyblock_off", {
 minetest.register_node("bobblocks:redpole", {
 	description = "Red Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_redblock.png"},
+	tiles = {"bobblocks_redblock.png"},
 	inventory_image = ("bobblocks_invredpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -396,7 +396,7 @@ minetest.register_node("bobblocks:redpole", {
 minetest.register_node("bobblocks:redpole_off", {
 	description = "Red Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_redblock.png"},
+	tiles = {"bobblocks_redblock.png"},
 	inventory_image = ("bobblocks_invredpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -415,7 +415,7 @@ minetest.register_node("bobblocks:redpole_off", {
 minetest.register_node("bobblocks:orangepole", {
 	description = "Orange Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_orangeblock.png"},
+	tiles = {"bobblocks_orangeblock.png"},
 	inventory_image = ("bobblocks_invorangepole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -432,7 +432,7 @@ minetest.register_node("bobblocks:orangepole", {
 minetest.register_node("bobblocks:orangepole_off", {
 	description = "Orange Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_orangeblock.png"},
+	tiles = {"bobblocks_orangeblock.png"},
 	inventory_image = ("bobblocks_invorangepole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -451,7 +451,7 @@ minetest.register_node("bobblocks:orangepole_off", {
 minetest.register_node("bobblocks:yellowpole", {
 	description = "Yellow Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_yellowblock.png"},
+	tiles = {"bobblocks_yellowblock.png"},
 	inventory_image = ("bobblocks_invyellowpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -468,7 +468,7 @@ minetest.register_node("bobblocks:yellowpole", {
 minetest.register_node("bobblocks:yellowpole_off", {
 	description = "Yellow Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_yellowblock.png"},
+	tiles = {"bobblocks_yellowblock.png"},
 	inventory_image = ("bobblocks_invyellowpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -487,7 +487,7 @@ minetest.register_node("bobblocks:yellowpole_off", {
 minetest.register_node("bobblocks:greenpole", {
 	description = "Green Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_greenblock.png"},
+	tiles = {"bobblocks_greenblock.png"},
 	inventory_image = ("bobblocks_invgreenpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -504,7 +504,7 @@ minetest.register_node("bobblocks:greenpole", {
 minetest.register_node("bobblocks:greenpole_off", {
 	description = "Green Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_greenblock.png"},
+	tiles = {"bobblocks_greenblock.png"},
 	inventory_image = ("bobblocks_invgreenpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -523,7 +523,7 @@ minetest.register_node("bobblocks:greenpole_off", {
 minetest.register_node("bobblocks:bluepole", {
 	description = "Blue Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_blueblock.png"},
+	tiles = {"bobblocks_blueblock.png"},
 	inventory_image = ("bobblocks_invbluepole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -540,7 +540,7 @@ minetest.register_node("bobblocks:bluepole", {
 minetest.register_node("bobblocks:bluepole_off", {
 	description = "Blue Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_blueblock.png"},
+	tiles = {"bobblocks_blueblock.png"},
 	inventory_image = ("bobblocks_invbluepole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -559,7 +559,7 @@ minetest.register_node("bobblocks:bluepole_off", {
 minetest.register_node("bobblocks:indigopole", {
 	description = "Indigo Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_indigoblock.png"},
+	tiles = {"bobblocks_indigoblock.png"},
 	inventory_image = ("bobblocks_invindigopole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -576,7 +576,7 @@ minetest.register_node("bobblocks:indigopole", {
 minetest.register_node("bobblocks:indigopole_off", {
 	description = "Indigo Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_indigoblock.png"},
+	tiles = {"bobblocks_indigoblock.png"},
 	inventory_image = ("bobblocks_invindigopole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -595,7 +595,7 @@ minetest.register_node("bobblocks:indigopole_off", {
 minetest.register_node("bobblocks:violetpole", {
 	description = "Violet Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_violetblock.png"},
+	tiles = {"bobblocks_violetblock.png"},
 	inventory_image = ("bobblocks_invvioletpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -612,7 +612,7 @@ minetest.register_node("bobblocks:violetpole", {
 minetest.register_node("bobblocks:violetpole_off", {
 	description = "Violet Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_violetblock.png"},
+	tiles = {"bobblocks_violetblock.png"},
 	inventory_image = ("bobblocks_invvioletpole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -631,7 +631,7 @@ minetest.register_node("bobblocks:violetpole_off", {
 minetest.register_node("bobblocks:whitepole", {
 	description = "White Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_whiteblock.png"},
+	tiles = {"bobblocks_whiteblock.png"},
 	inventory_image = ("bobblocks_invwhitepole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -648,7 +648,7 @@ minetest.register_node("bobblocks:whitepole", {
 minetest.register_node("bobblocks:whitepole_off", {
 	description = "White Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_whiteblock.png"},
+	tiles = {"bobblocks_whiteblock.png"},
 	inventory_image = ("bobblocks_invwhitepole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -667,7 +667,7 @@ minetest.register_node("bobblocks:whitepole_off", {
 minetest.register_node("bobblocks:greypole", {
 	description = "Grey Pole",
 	drawtype = "fencelike",
-	tile_images = {"bobblocks_greyblock.png"},
+	tiles = {"bobblocks_greyblock.png"},
 	inventory_image = ("bobblocks_invgreypole.png"),
 	paramtype = "light",
 	sunlight_propagates = true,
