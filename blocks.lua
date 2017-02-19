@@ -63,7 +63,7 @@ minetest.register_node("bobblocks:block_off", {
 	is_ground_content = true,
 	use_texture_alpha = true,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
-	drop = 'bobblocks:redblock',
+	drop = "bobblocks:block",
 	mesecons = {conductor={
 			state = mesecon.state.off,
 			onstate = "bobblocks:block"
@@ -109,7 +109,7 @@ minetest.register_node("bobblocks:pole_off", {
 	sounds = default.node_sound_glass_defaults(),
 	light_source = LIGHT_MAX-10,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
-	drop = 'bobblocks:redpole',
+	drop = 'bobblocks:pole',
 	mesecons = {conductor={
 			state = mesecon.state.off,
 			onstate = "bobblocks:pole"
@@ -163,7 +163,7 @@ minetest.register_node("bobblocks:wavyblock_off", {
 	is_ground_content = true,
 	use_texture_alpha = true,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
-	drop = 'bobblocks:wavyblock',
+	drop = "bobblocks:wavyblock",
 	mesecons = {conductor=
 		{
 			state = mesecon.state.off,
