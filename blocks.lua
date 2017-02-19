@@ -50,7 +50,7 @@ minetest.register_node("bobblocks:block", {
 			offstate = "bobblocks:block_off"
 		}
 	},
-	on_punch = bobblocks.update_bobblock,
+	on_rightclick = bobblocks.update_bobblock,
 	after_dig_node = unifieddyes.after_dig_node
 })
 
@@ -150,6 +150,7 @@ minetest.register_node("bobblocks:wavyblock", {
 			offstate = "bobblocks:wavyblock_off"
 		}
 	},
+	on_rightclick = bobblocks.update_bobblock,
 	after_dig_node = unifieddyes.after_dig_node
 })
 
@@ -169,6 +170,7 @@ minetest.register_node("bobblocks:wavyblock_off", {
 			onstate = "bobblocks:wavyblock"
 		}
 	},
+	on_rightclick = bobblocks.update_bobblock,
 	after_dig_node = unifieddyes.after_dig_node
 })
 
