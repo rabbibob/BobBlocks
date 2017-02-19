@@ -16,6 +16,8 @@ bobblocks.colorlist = {
 	"grey"
 }
 
+bobblocks.opacity = 150 -- Opacity: 0-255; 0 Full transparent, 255 Full opaque
+
 bobblocks.update_bobblock = function (pos, node)
 	local newnode = node
 	if string.find(newnode.name, "_off") then
@@ -54,11 +56,12 @@ minetest.register_node("bobblocks:block", {
 
 minetest.register_node("bobblocks:block_off", {
 	description = "Bobblocks Plain Block (off)",
-    tiles = {"bobblocks_block.png"},
+	drawtype = "glasslike",
+	tiles = {"bobblocks_block.png^[opacity:"..bobblocks.opacity},
 	paramtype2 = "color",
 	palette = "unifieddyes_palette.png",
 	is_ground_content = true,
-	alpha = WATER_ALPHA,
+	use_texture_alpha = true,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
 	drop = 'bobblocks:redblock',
 	mesecons = {conductor={
@@ -96,12 +99,13 @@ minetest.register_node("bobblocks:pole", {
 minetest.register_node("bobblocks:pole_off", {
 	description = "Bobblocks Pole (off)",
 	drawtype = "fencelike",
-	tiles = {"bobblocks_block.png"},
+	tiles = {"bobblocks_block.png^[opacity:"..bobblocks.opacity},
 	paramtype = "light",
 	paramtype2 = "color",
 	palette = "unifieddyes_palette.png",
 	sunlight_propagates = true,
 	is_ground_content = true,
+	use_texture_alpha = true,
 	sounds = default.node_sound_glass_defaults(),
 	light_source = LIGHT_MAX-10,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
@@ -151,11 +155,12 @@ minetest.register_node("bobblocks:wavyblock", {
 
 minetest.register_node("bobblocks:wavyblock_off", {
 	description = "Bobblocks Wavy-textured Block (off)",
-	tiles = {"bobblocks_wavyblock.png"},
+	drawtype = "glasslike",
+	tiles = {"bobblocks_wavyblock.png^[opacity:"..bobblocks.opacity},
 	paramtype2 = "color",
 	palette = "unifieddyes_palette.png",
 	is_ground_content = true,
-	alpha = WATER_ALPHA,
+	use_texture_alpha = true,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
 	drop = 'bobblocks:wavyblock',
 	mesecons = {conductor=
