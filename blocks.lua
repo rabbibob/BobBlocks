@@ -283,11 +283,11 @@ minetest.register_lbm({
 			newcolor = "light_grey"
 		end
 
-		local paletteidx, _ = unifieddyes.getpaletteidx("unifieddyes:"..newcolor, false)
+		local paletteidx, _ = unifieddyes.getpaletteidx("unifieddyes:"..newcolor, "extended")
 		local newnode = "bobblocks:block"
 
 		if string.find(basename, "grey") then
-			paletteidx, _ = unifieddyes.getpaletteidx("unifieddyes:grey", false)
+			paletteidx, _ = unifieddyes.getpaletteidx("unifieddyes:grey", "extended")
 			if string.find(basename, "pole") then
 				newnode = "bobblocks:wavypole"
 			else
