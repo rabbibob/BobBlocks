@@ -18,7 +18,7 @@ bobblocks.colorlist = {
 
 bobblocks.opacity = 150 -- Opacity: 0-255; 0 Full transparent, 255 Full opaque
 
-bobblocks.update_bobblock = function (pos, node)
+local function update_bobblock(pos, node)
 	local newnode = node
 	if string.find(newnode.name, "_off") then
 		newnode.name = string.sub(newnode.name, 1, -5)
@@ -29,6 +29,13 @@ bobblocks.update_bobblock = function (pos, node)
     minetest.swap_node(pos, newnode)
     minetest.sound_play("bobblocks_glassblock",
 	{pos = pos, gain = 1.0, max_hear_distance = 32,})
+end
+
+bobblocks.update_bobblock = update_bobblock
+
+local function dig_block(pos, node, digger)
+	update_bobblock(pos, node)
+	return unifieddyes.on_dig(pos, node, digger)
 end
 
 -- Nodes
@@ -50,7 +57,7 @@ minetest.register_node("bobblocks:block", {
 			offstate = "bobblocks:block_off"
 		}
 	},
-	on_rightclick = bobblocks.update_bobblock,
+	on_rightclick = update_bobblock,
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
 })
@@ -64,15 +71,14 @@ minetest.register_node("bobblocks:block_off", {
 	is_ground_content = false,
 	use_texture_alpha = true,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
-	drop = "bobblocks:block",
 	mesecons = {conductor={
 			state = mesecon.state.off,
 			onstate = "bobblocks:block"
 		}
 	},
-	on_rightclick = bobblocks.update_bobblock,
+	on_rightclick = update_bobblock,
 	on_construct = unifieddyes.on_construct,
-	on_dig = unifieddyes.on_dig,
+	on_dig = dig_block,
 })
 
 -- Block Poles
@@ -94,7 +100,7 @@ minetest.register_node("bobblocks:pole", {
 			offstate = "bobblocks:pole_off"
 		}
 	},
-	on_rightclick = bobblocks.update_bobblock,
+	on_rightclick = update_bobblock,
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
 })
@@ -112,15 +118,14 @@ minetest.register_node("bobblocks:pole_off", {
 	sounds = default.node_sound_glass_defaults(),
 	light_source = LIGHT_MAX-10,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
-	drop = 'bobblocks:pole',
 	mesecons = {conductor={
 			state = mesecon.state.off,
 			onstate = "bobblocks:pole"
 		}
 	},
-	on_rightclick = bobblocks.update_bobblock,
+	on_rightclick = update_bobblock,
 	on_construct = unifieddyes.on_construct,
-	on_dig = unifieddyes.on_dig,
+	on_dig = dig_block,
 })
 
 -- old nodes grandfathered-in because they have a different texture or usage than the colored ones.
@@ -153,7 +158,7 @@ minetest.register_node("bobblocks:wavyblock", {
 			offstate = "bobblocks:wavyblock_off"
 		}
 	},
-	on_rightclick = bobblocks.update_bobblock,
+	on_rightclick = update_bobblock,
 	on_construct = unifieddyes.on_construct,
 	on_dig = unifieddyes.on_dig,
 })
@@ -167,16 +172,15 @@ minetest.register_node("bobblocks:wavyblock_off", {
 	is_ground_content = false,
 	use_texture_alpha = true,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
-	drop = "bobblocks:wavyblock",
 	mesecons = {conductor=
 		{
 			state = mesecon.state.off,
 			onstate = "bobblocks:wavyblock"
 		}
 	},
-	on_rightclick = bobblocks.update_bobblock,
+	on_rightclick = update_bobblock,
 	on_construct = unifieddyes.on_construct,
-	on_dig = unifieddyes.on_dig,
+	on_dig = dig_block,
 })
 
 minetest.register_node("bobblocks:wavypole", {
