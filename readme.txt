@@ -1,8 +1,15 @@
--- BobBlocks v0.0.8
--- (Minetest 0.4.5 compatible 20130315)
+-- BobBlocks v0.0.9
+-- (Minetest 5.3.0 compatible 20201103)
 -- http://forum.minetest.net/viewtopic.php?id=1274
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+-- Full dependencies (including sub-dependencies):
+--      basic_materials
+--      mesecons
+--      moreores
+--      unifieddyes
+
+---- Notes prior to v0.0.9
 --          Requirements: Mesecons                                      --
 --          http://forum.minetest.net/viewtopic.php?id=628              --
 --                                                                      --
