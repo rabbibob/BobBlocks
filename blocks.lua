@@ -69,7 +69,7 @@ minetest.register_node("bobblocks:block_off", {
 	paramtype2 = "color",
 	palette = "unifieddyes_palette_extended.png",
 	is_ground_content = false,
-	use_texture_alpha = true,
+	use_texture_alpha = "blend",
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
 	mesecons = {conductor={
 			state = mesecon.state.off,
@@ -114,7 +114,7 @@ minetest.register_node("bobblocks:pole_off", {
 	palette = "unifieddyes_palette_extended.png",
 	sunlight_propagates = true,
 	is_ground_content = false,
-	use_texture_alpha = true,
+	use_texture_alpha = "blend",
 	sounds = default.node_sound_glass_defaults(),
 	light_source = LIGHT_MAX-10,
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
@@ -170,7 +170,7 @@ minetest.register_node("bobblocks:wavyblock_off", {
 	paramtype2 = "color",
 	palette = "unifieddyes_palette_extended.png",
 	is_ground_content = false,
-	use_texture_alpha = true,
+	use_texture_alpha = "blend",
 	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3,not_in_creative_inventory=1, ud_param2_colorable = 1},
 	mesecons = {conductor=
 		{
